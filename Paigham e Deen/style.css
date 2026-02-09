@@ -1,0 +1,126 @@
+/* Reset & Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Base Dark Theme - Pehle se zyada deep black colors */
+body {
+  background: #050706; /* Solid Dark Black */
+  color: #e2e8f0;
+  scroll-behavior: smooth;
+}
+
+/* Navbar - Modern Dark Look */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(15, 26, 22, 0.95); /* Thoda sa transparent */
+  backdrop-filter: blur(10px); /* Blur effect for premium feel */
+  padding: 15px 0;
+  z-index: 1000;
+  border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #00c896; /* Consistent Green Accent */
+}
+
+/* Hero Section - Gradient Overlay */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  /* Dark Gradient Overlay for better text visibility */
+  background: linear-gradient(to bottom, rgba(5, 7, 6, 0.8), #050706), 
+              url('image/back ground.png'); 
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+}
+
+.hero-text h1 {
+  font-size: 55px;
+  color: #00c896;
+  text-shadow: 0 0 20px rgba(0, 200, 150, 0.3);
+}
+
+/* Feature Cards - Floating Dark Boxes */
+.feature-card {
+  background: #0f1714; /* Darker card background */
+  border: 1px solid #1e293b;
+  border-radius: 18px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  border-color: #00c896;
+  box-shadow: 0 10px 30px rgba(0, 200, 150, 0.15);
+}
+
+/* Buttons - High Contrast */
+.primary {
+  background: #00c896;
+  color: #050706; /* Dark text on light button */
+  border: none;
+}
+
+.primary:hover {
+  background: #00a67e;
+  box-shadow: 0 0 15px rgba(0, 200, 150, 0.4);
+}
+
+.secondary {
+  border: 2px solid #00c896;
+  color: #00c896;
+}
+
+/* Why Section - Better Contrast */
+.why {
+  background: #0a0f0d;
+  padding: 100px 0;
+}
+
+.why-list li::before {
+  color: #00c896;
+}
+
+/* Color Palette Cards (Responsive Fix) */
+.color-card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  color: #ffffff;
+}
+
+/* Stats Section */
+.stat-card {
+  background: #111827;
+  border: 1px solid #00c89633;
+}
+
+/* Footer - Deep Contrast */
+.footer {
+  background: #020617; /* Very dark blue-black */
+  border-top: 1px solid #1e293b;
+}
+
+.footer h2 {
+  color: #00c896;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 35px;
+  }
+  .nav-menu {
+    background: #0f1a16;
+  }
+}
