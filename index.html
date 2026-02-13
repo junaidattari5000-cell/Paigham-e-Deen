@@ -4,449 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paigham e Deen</title>
+  
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#00C896">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-container">
-      
-      <!-- Logo -->
-      <div class="logo">
-        🕌 Paigham e Deen
-      </div>
-
-      <!-- Menu -->
+      <div class="logo">🕌 Paigham e Deen</div>
       <ul class="nav-menu">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Screenshots</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-
-      <!-- Download Button -->
       <a href="#" class="download-btn">Download</a>
-
-      <!-- Mobile Menu Icon -->
-      <div class="menu-toggle" id="menu-toggle">
-        ☰
-      </div>
-
+      <div class="menu-toggle" id="menu-toggle">☰</div>
     </div>
   </nav>
 
-  <!-- Dummy Content for Scroll -->
   <section class="hero">
-    <h1>Paigham e Deen</h1>
-    <p>Islamic Lifestyle App</p>
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Paigham e Deen</h1>
+        <h2>Your Daily Islamic Companion</h2>
+        <p>Stay connected with Deen anytime, anywhere. Get Namaz timings, Quran access, Azan alerts, Tasbeeh counter and more.</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn primary">Download App</a>
+          <a href="#" class="btn secondary">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="image/background.png" alt="Islamic App">
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title">Powerful Islamic Tools</h2>
+      <div class="features-grid">
+        <div class="feature-card"><div class="feature-icon">🕐</div><h3>Namaz Timings</h3><p>Accurate prayer times.</p></div>
+        <div class="feature-card"><div class="feature-icon">📖</div><h3>Quran Pak</h3><p>Read anytime, anywhere.</p></div>
+        <div class="feature-card"><div class="feature-icon">🧭</div><h3>Qibla</h3><p>Find correct direction.</p></div>
+        <div class="feature-card"><div class="feature-icon">📿</div><h3>Tasbeeh</h3><p>Digital counter.</p></div>
+        <div class="feature-card"><div class="feature-icon">🔔</div><h3>Azan</h3><p>Prayer notifications.</p></div>
+        <div class="feature-card"><div class="feature-icon">🌙</div><h3>Daily Quotes</h3><p>Inspirational content.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="extra-pro">
+    <h2 class="extra-title">Next Level Pro Ideas</h2>
+    <div class="extra-container">
+      <div class="extra-card"><h3>🌙 Dynamic API</h3><p>Auto fetch prayer times.</p><button class="extra-btn">Learn More</button></div>
+      <div class="extra-card"><h3>🤲 Smart Tasbeeh</h3><p>Sync with cloud.</p><button class="extra-btn">Learn More</button></div>
+    </div>
   </section>
 
   <script src="script.js"></script>
-  <!-- Hero Section -->
-<section class="hero">
-
-  <div class="hero-container">
-
-    <!-- Left Content -->
-    <div class="hero-text">
-      <h1>Paigham e Deen</h1>
-      <h2>Your Daily Islamic Companion</h2>
-
-      <p>
-        Stay connected with Deen anytime, anywhere. 
-        Get Namaz timings, Quran access, Azan alerts, Tasbeeh counter and more.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#" class="btn primary">Download App</a>
-        <a href="#" class="btn secondary">Learn More</a>
-      </div>
-    </div>
-
-    <!-- Right Image -->
-    <div class="hero-image">
-      <img src="image/background.png" alt="Islamic App">
-    </div>
-
-  </div>
-
-</section>
-<!-- Core Features Section -->
-<section class="features" id="features">
-  <div class="container">
-
-    <h2 class="section-title">Powerful Islamic Tools</h2>
-    <p class="section-subtitle">Everything you need to stay connected with Deen</p>
-
-    <div class="features-grid">
-      <!-- Feature 1 -->
-      <div class="feature-card">
-        <div class="feature-icon">🕐</div>
-        <h3>Namaz Timings</h3>
-        <p>Accurate prayer times based on your location.</p>
-      </div>
-
-      <!-- Feature 2 -->
-      <div class="feature-card">
-        <div class="feature-icon">📖</div>
-        <h3>Quran Pak</h3>
-        <p>Read and listen to the Quran anytime, anywhere.</p>
-      </div>
-
-      <!-- Feature 3 -->
-      <div class="feature-card">
-        <div class="feature-icon">🧭</div>
-        <h3>Qibla Direction</h3>
-        <p>Find the correct Qibla direction easily.</p>
-      </div>
-
-      <!-- Feature 4 -->
-      <div class="feature-card">
-        <div class="feature-icon">📿</div>
-        <h3>Tasbeeh Counter</h3>
-        <p>Digital tasbeeh counter with progress tracking.</p>
-      </div>
-
-      <!-- Feature 5 -->
-      <div class="feature-card">
-        <div class="feature-icon">🔔</div>
-        <h3>Azan Alerts</h3>
-        <p>Get notifications for every prayer time.</p>
-      </div>
-
-      <!-- Feature 6 -->
-      <div class="feature-card">
-        <div class="feature-icon">🌙</div>
-        <h3>Daily Quotes</h3>
-        <p>Inspirational Islamic quotes delivered daily.</p>
-      </div>
-    </div>
-    
-  </div>
-</section>
-<!-- App Demo / Screens Section -->
-<section class="app-demo" id="screenshots">
-  <div class="container">
-
-    <h2 class="section-title">App Screenshots</h2>
-    <p class="section-subtitle">Explore the app’s interface and features</p>
-
-    <!-- Slider Container -->
-    <div class="slider">
-      <div class="slide active">
-        <img src="image/image1.png" alt="Home Screen">
-        <p>Home Dashboard</p>
-      </div>
-      <div class="slide">
-        <img src="image/image4.png" alt="Namaz Screen">
-        <p>Namaz Timings</p>
-      </div>
-      <div class="slide">
-        <img src="image/image2.png" alt="Quran Screen">
-        <p>Quran Pak</p>
-      </div>
-      <div class="slide">
-        <img src="image/image3.png" alt="Tasbeeh Screen">
-        <p>Tasbeeh Counter</p>
-      </div>
-    </div>
-
-    <!-- Slider Controls -->
-    <div class="slider-controls">
-      <button id="prev">❮</button>
-      <button id="next">❯</button>
-    </div>
-
-  </div>
-</section>
-<!-- Why Paigham e Deen Section -->
-<section class="why" id="why">
-  <div class="container why-container">
-
-    <!-- Left Image -->
-    <div class="why-image">
-      <img src="image/image5.png" alt="Why Paigham-e-Deen">
-    </div>
-
-    <!-- Right Content -->
-    <div class="why-content">
-      <h2 class="section-title">Why Choose Paigham-e-Deen?</h2>
-      <p class="section-subtitle">We provide a reliable, easy-to-use, and lightweight Islamic app for daily life.</p>
-
-      <ul class="why-list">
-        <li>✔ Accurate Namaz Timings</li>
-        <li>✔ Offline Features for Anywhere Use</li>
-        <li>✔ Easy Urdu & English Support</li>
-        <li>✔ Lightweight & Fast Performance</li>
-        <li>✔ Daily Islamic Motivation & Quotes</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-<!-- User Testimonials Section -->
-<section class="testimonials" id="testimonials">
-  <div class="container">
-
-    <h2 class="section-title">What Users Say</h2>
-    <p class="section-subtitle">Our users love Paigham e Deen</p>
-
-    <div class="testimonial-slider">
-      <!-- Testimonial 1 -->
-      <div class="testimonial-card active">
-        <p>"This app has made following Namaz and reading Quran so much easier!"</p>
-        <h4>- Ahmed R.</h4>
-      </div>
-
-      <!-- Testimonial 2 -->
-      <div class="testimonial-card">
-        <p>"I love the Tasbeeh counter and daily Islamic quotes. Highly recommended!"</p>
-        <h4>- Fatima S.</h4>
-      </div>
-
-      <!-- Testimonial 3 -->
-      <div class="testimonial-card">
-        <p>"Lightweight, fast, and accurate. Perfect Islamic companion for daily life."</p>
-        <h4>- Bilal K.</h4>
-      </div>
-    </div>
-
-    <!-- Slider Controls -->
-    <div class="testimonial-controls">
-      <button id="prev-testimonial">❮</button>
-      <button id="next-testimonial">❯</button>
-    </div>
-
-  </div>
-</section>
-<!-- App Stats Section -->
-<section class="app-stats" id="stats">
-  <div class="container">
-
-    <h2 class="section-title">App Stats</h2>
-    <p class="section-subtitle">See how Paigham e Deen is impacting lives</p>
-
-    <div class="stats-grid">
-      <!-- Stat 1 -->
-      <div class="stat-card">
-        <h3 class="counter" data-target="10000">0</h3>
-        <p>Downloads</p>
-      </div>
-
-      <!-- Stat 2 -->
-      <div class="stat-card">
-        <h3 class="counter" data-target="4800">0</h3>
-        <p>5-Star Ratings</p>
-      </div>
-
-      <!-- Stat 3 -->
-      <div class="stat-card">
-        <h3 class="counter" data-target="50000">0</h3>
-        <p>Tasbeeh Count</p>
-      </div>
-
-      <!-- Stat 4 -->
-      <div class="stat-card">
-        <h3 class="counter" data-target="120">0</h3>
-        <p>Features</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-<!-- Call To Action Section -->
-<section class="cta" id="download">
-  <div class="container cta-container">
-
-    <h2 class="section-title">Start Your Deen Journey Today</h2>
-    <p class="section-subtitle">Download Paigham e Deen and stay connected with your faith anytime, anywhere.</p>
-
-    <div class="cta-buttons">
-      <a href="#" class="btn primary">Download for Android</a>
-      <a href="#" class="btn secondary">Coming Soon on iOS</a>
-    </div>
-
-  </div>
-</section>
-<!-- Contact & Support Section -->
-<section class="contact" id="contact">
-  <div class="container contact-container">
-
-    <h2 class="section-title">Get in Touch</h2>
-    <p class="section-subtitle">Have questions or feedback? We are here to help!</p>
-
-    <div class="contact-content">
-
-      <!-- Contact Info -->
-      <div class="contact-info">
-        <h3>Contact Information</h3>
-        <p>Email: <a href="junaidattari5000@gmail.com">junaidattari5000@gmail.com</a></p>
-        <p>WhatsApp: <a href="https://wa.me/923126562177">+92 3126562177</a></p>
-      </div>
-
-      <!-- Contact Form -->
-      <div class="contact-form">
-        <h3>Send Us a Message</h3>
-        <form id="contactForm">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn primary">Send Message</button>
-        </form>
-        <p class="form-status" id="formStatus"></p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-<footer class="footer">
-  <div class="footer-container">
-
-    <div class="footer-brand">
-      <h2>Paigham-e-Deen</h2>
-      <p>Spreading the message of Islam through technology.</p>
-    </div>
-
-    <div class="footer-links">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Download</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-links">
-      <h3>Support</h3>
-      <ul>
-        <li><a href="#">Help Center</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-social">
-      <h3>Follow Us</h3>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2026 Paigham-e-Deen. All Rights Reserved.</p>
-  </div>
-</footer>
-<section class="color-palette">
-  <h2 class="palette-title">Professional Dark Theme Palette</h2>
-
-  <div class="palette-container">
-
-    <div class="color-card" data-color="#0D0D0D">
-      <div class="color-box" style="background:#0D0D0D;"></div>
-      <p>#0D0D0D</p>
-    </div>
-
-    <div class="color-card" data-color="#121212">
-      <div class="color-box" style="background:#121212;"></div>
-      <p>#121212</p>
-    </div>
-
-    <div class="color-card" data-color="#1E1E1E">
-      <div class="color-box" style="background:#1E1E1E;"></div>
-      <p>#1E1E1E</p>
-    </div>
-
-    <div class="color-card" data-color="#00C896">
-      <div class="color-box" style="background:#00C896;"></div>
-      <p>#00C896 (Primary)</p>
-    </div>
-
-    <div class="color-card" data-color="#00A67E">
-      <div class="color-box" style="background:#00A67E;"></div>
-      <p>#00A67E (Hover)</p>
-    </div>
-
-    <div class="color-card" data-color="#FFFFFF">
-      <div class="color-box" style="background:#FFFFFF;"></div>
-      <p>#FFFFFF (Text)</p>
-    </div>
-
-  </div>
-
-  <p class="copy-info">Click any color to copy code</p>
-</section>
-<section class="dev-tips">
-  <h2 class="tips-title">Pro Developer Tips</h2>
-
-  <div class="tips-container">
-
-    <div class="tip-card">
-      <div class="tip-icon">💡</div>
-      <h3>Clean Code</h3>
-      <p>Always write readable and well-structured code for better maintenance.</p>
-    </div>
-
-    <div class="tip-card">
-      <div class="tip-icon">⚡</div>
-      <h3>Performance First</h3>
-      <p>Optimize images, reduce scripts and use lazy loading techniques.</p>
-    </div>
-
-    <div class="tip-card">
-      <div class="tip-icon">📱</div>
-      <h3>Mobile Friendly</h3>
-      <p>Always design mobile-first then scale up for larger screens.</p>
-    </div>
-
-    <div class="tip-card">
-      <div class="tip-icon">🔒</div>
-      <h3>Security Matters</h3>
-      <p>Use HTTPS, validate inputs and protect user data properly.</p>
-    </div>
-
-  </div>
-</section>
-<section class="extra-pro">
-  <h2 class="extra-title">Next Level Pro Ideas</h2>
-
-  <div class="extra-container">
-
-    <div class="extra-card">
-      <h3>🌙 Dynamic Prayer Time API</h3>
-      <p>Auto fetch prayer times based on user location.</p>
-      <button class="extra-btn">Learn More</button>
-    </div>
-
-    <div class="extra-card">
-      <h3>🤲 Smart Tasbeeh Counter</h3>
-      <p>Save tasbeeh progress and sync with cloud database.</p>
-      <button class="extra-btn">Learn More</button>
-    </div>
-
-    <div class="extra-card">
-      <h3>📖 AI Quran Search</h3>
-      <p>Search Quran verses using smart AI keyword matching.</p>
-      <button class="extra-btn">Learn More</button>
-    </div>
-
-    <div class="extra-card">
-      <h3>🔔 Islamic Reminder Notifications</h3>
-      <p>Send daily duas, hadith and prayer reminders.</p>
-      <button class="extra-btn">Learn More</button>
-    </div>
-
-</section>
-
 </body>
 </html>
+
 
 
